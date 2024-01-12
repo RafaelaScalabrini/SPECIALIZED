@@ -15,15 +15,18 @@ public class PriceOptionPage extends BasePage {
                 .until(d -> d.findElement(By.xpath("//li[@class='idealsteps-step-active']//a[@id='selectpriceoption']")));
     }
     //Campos (Locators = XPath)
-    protected String SilverRadioInputField = "//label[@class='choosePrice ideal-radiocheck-label']//input[@id='selectsilver']";
-    protected String GoldRadioInputField = "//label[@class='choosePrice ideal-radiocheck-label']//input[@id='selectgold']";
-    protected String PlatinumRadioInputField = "//label[@class='choosePrice ideal-radiocheck-label']//input[@id='selectplatinum']";
-    protected String UltimateRadioInputField = "//label[@class='choosePrice ideal-radiocheck-label']//input[@id='selectultimate']";
+    protected String SilverRadioInputField = "//table[@id='priceTable']//tfoot//input[@id='selectsilver']/..";
+    protected String GoldRadioInputField = "//table[@id='priceTable']//tfoot//input[@id='selectgold']/..";
+    protected String PlatinumRadioInputField = "//table[@id='priceTable']//tfoot//input[@id='selectplatinum']/..";
+    protected String UltimateRadioInputField = "//table[@id='priceTable']//tfoot//input[@id='selectultimate']/..";
 
     protected String NextButton = "//button[@id='nextsendquote']";
 
     //Metodos para executar uma ação em algum campo definido acima
-    public void selectPriceOptionForm() {
+    public void selectPriceOptionForm() throws InterruptedException {
+        //click(driver.findElement(By.xpath(SilverRadioInputField)));
+        //click(driver.findElement(By.xpath(GoldRadioInputField)));
+        //click(driver.findElement(By.xpath(PlatinumRadioInputField)));
         click(driver.findElement(By.xpath(UltimateRadioInputField)));
         click(driver.findElement(By.xpath(NextButton)));
     }

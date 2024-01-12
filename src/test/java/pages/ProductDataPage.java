@@ -19,22 +19,26 @@ public class ProductDataPage extends BasePage {
     }
 
     //Campos (Locators = XPath)
-    protected String StartDateDatePickerInputField = "//input[@id'startdate']";
+    protected String StartDateDatePickerInputField = "//input[@id='startdate']";
     protected String InsuranceSumSelectField = "//select[@id='insurancesum']";
     protected String MeritRatingSelectField = "//select[@id='meritrating']";
     protected String DamageInsuranceSelectField = "//select[@id='damageinsurance']";
-    protected String OptionalProductsRadioField = "//input[@id='EuroProtection']";
+    protected String OptionalProductsEuroProtectionRadioField = "//label[input[@id='EuroProtection']]";
+    protected String OptionalProductsLegalDefenseInsuranceRadioField = "//label[input[@id='LegalDefenseInsurance']]";
     protected String CourtesyCarSelectField = "//select[@id='courtesycar']";
+    protected String NextButton = "//button[@id='nextselectpriceoption']";
+
 
     //Metodos para executar uma ação em algum campo definido acima
     public void fillOutTheProductForm() {
         driver.findElement(By.xpath(StartDateDatePickerInputField)).sendKeys("11/01/2025");
-        selectOption(driver.findElement(By.xpath(InsuranceSumSelectField)), "3000000");
+        selectOption(driver.findElement(By.xpath(InsuranceSumSelectField)), " 3.000.000,00");
         selectOption(driver.findElement(By.xpath(MeritRatingSelectField)), "Super Bonus");
         selectOption(driver.findElement(By.xpath(DamageInsuranceSelectField)), "No Coverage");
-        click(driver.findElement(By.xpath(OptionalProductsRadioField)));
-        selectOption(driver.findElement(By.xpath(CourtesyCarSelectField)), "Yes");
-
+        click(driver.findElement(By.xpath(OptionalProductsEuroProtectionRadioField)));
+        click(driver.findElement(By.xpath(OptionalProductsLegalDefenseInsuranceRadioField)));
+        selectOption(driver.findElement(By.xpath(CourtesyCarSelectField)), " Yes");
+        click(driver.findElement(By.xpath(NextButton)));
     }
 
     public boolean ValidateThatTheSelectPriceOptionIsActive() {

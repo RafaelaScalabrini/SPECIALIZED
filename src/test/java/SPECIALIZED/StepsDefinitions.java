@@ -21,6 +21,7 @@ public class StepsDefinitions {
     ProductDataPage productDataPage = null;
     PriceOptionPage priceOptionPage = null;
     QuotePage quotePage = null;
+
     @Before
     public static void setUp() {
         System.setProperty("webdriver.chrome.driver", CAMINHO_DRIVER);
@@ -53,6 +54,7 @@ public class StepsDefinitions {
     public void fillOutTheFormEnterInsurantDataTabAndIfYouSelectTheNextButton() {
         insurantDataPage.fillOutTheInsurantForm();
     }
+
     @Then("the system will go to the Enter product data")
     public void thenTheSystemWillGoToTheEnterProductData() {
         assertTrue(insurantDataPage.ValidateThatTheEnterProductDataIsActive());
@@ -67,17 +69,19 @@ public class StepsDefinitions {
     public void fillOutTheFormEnterProductDataTabAndIfYouSelectTheNextButton() {
         productDataPage.fillOutTheProductForm();
     }
+
     @Then("the system will go to the Select Price Option")
     public void thenTheSystemWillGoToTheSelectPriceOption() {
         assertTrue(productDataPage.ValidateThatTheSelectPriceOptionIsActive());
     }
+
     @Given("that I have the Select Price Option")
     public void iEnterTheSelectPriceOption() {
         priceOptionPage = new PriceOptionPage(driver);
     }
 
     @When("Fill out the form, Select Price Option tab and if you select the next button")
-    public void fillOutTheFormSelectPriceOptionTabAndIfYouSelectTheNextButton() {
+    public void fillOutTheFormSelectPriceOptionTabAndIfYouSelectTheNextButton() throws InterruptedException {
         priceOptionPage.selectPriceOptionForm();
     }
 
@@ -101,7 +105,8 @@ public class StepsDefinitions {
         assertTrue(quotePage.ValidateTheSweetAlertMessageHasSuccess());
     }
 
-   // @After()
-   // public void closeBrowser() {
-      //  driver.quit();
+    @After()
+    public void closeBrowser() {
+        driver.quit();
     }
+}

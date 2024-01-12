@@ -21,8 +21,8 @@ public class VehicleDataPage extends BasePage {
     protected String EnginePerformanceInputField = "//input[@id='engineperformance']";
     protected String DateOfManufactureDatePickerField = "//input[@id='dateofmanufacture']";
     protected String NumberOfSeatsSelectField1 = "//select[@id='numberofseats']";
-   // protected String RightHandDriveYesRadioField = "//input[@id='righthanddriveyes']";
-   // protected String RightHandDriveNoRadioField = "//input[@id='righthanddriveyno']";
+    protected String RightHandDriveYesRadioField = "//label[input[@id='righthanddriveyes']]";
+    protected String RightHandDriveNoRadioField = "//label[input[@id='righthanddriveyno']]";
     protected String NumberOfSeatsSelectField2 = "//select[@id='numberofseatsmotorcycle']";
     protected String FuelTypeSelectField = "//select[@id='fuel']";
     protected String PayloadInputField = "//input[@id='payload']";
@@ -40,7 +40,7 @@ public class VehicleDataPage extends BasePage {
         driver.findElement(By.xpath(EnginePerformanceInputField)).sendKeys("1000");
         driver.findElement(By.xpath(DateOfManufactureDatePickerField)).sendKeys("11/01/2000");
         selectOption(driver.findElement(By.xpath(NumberOfSeatsSelectField1)),"1");
-       // click(driver.findElement(By.xpath(RightHandDriveYesRadioField)));
+        click(driver.findElement(By.xpath(RightHandDriveYesRadioField)));
         selectOption(driver.findElement(By.xpath(NumberOfSeatsSelectField2)),"1");
         selectOption( driver.findElement(By.xpath(FuelTypeSelectField)), "Gas");
         driver.findElement(By.xpath(PayloadInputField)).sendKeys("1000");
