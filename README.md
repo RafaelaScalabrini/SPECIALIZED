@@ -19,3 +19,4 @@ Como foi realizado o mapeamento e organização dos objetos da automação.
 Foi em Page Objects utilizando a programação orientada a objetos e encapsulamento dos métodos para uma melhor reutilização do código
 	Explicar a estrutura Gherkin utilizada no script.
 Eu criei somente um passo Create Quote e coloquei os passos de preenchimento de todas as páginas no mesmo script.
+
