@@ -3,7 +3,7 @@
 <b><i># SPECIALIZED <br> </b> </i>  <br> 
 <i><b><u>Automação de testes</u></b></i>
 </head> <br>
-<body> <br>
+<body> 
   <br>
 <p> A IDE de desenvolvimento da automação foi o Intellij, a linguagem de programação da automação foi Java, o designer partner foi
 o Page Object, seguindo os padrões de estrutura e as boas práticas de encapsulamento e divisão das classes e organização de código,
