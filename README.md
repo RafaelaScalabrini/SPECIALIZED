@@ -16,6 +16,6 @@ A estrutura geral do código foi em programação orientada a objetos com o enca
 <b><i>Fontes:</b></i>
 
 https://cucumber.io/docs/guides/10-minute-tutorial/?lang=java <br>
-https://www.selenium.dev/documentation/webdriver/getting_started/using_selenium/<br>
+https://www.selenium.dev/documentation/webdriver/getting_started/using_selenium/
 https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/
 </html>
