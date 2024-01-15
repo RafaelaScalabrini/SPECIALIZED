@@ -13,7 +13,7 @@ A estrutura geral do código foi em programação orientada a objetos com o enca
 <p> A estrutura do Guerkin utilizada no script eu criei apenas um cenário de teste "Create Quote" e coloquei os passos de preenchimento de todas as páginas no mesmo script do BDD. Criei os hooks para abrir e fechar o chrome, declarei as variáveis para chamar as classes nos passos do BDD e no arquivo de configuração do Maven eu chamei todas as bibliotecas.</p> <br>
 </body>
 
-Fontes:
+<b><i>Fontes:</b></i>
 
 https://cucumber.io/docs/guides/10-minute-tutorial/?lang=java <br>
 https://www.selenium.dev/documentation/webdriver/getting_started/using_selenium/<br>
