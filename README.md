@@ -1,7 +1,7 @@
 <html> 
 <head>
-# SPECIALIZED <br>
-<title>Automação de testes</title>
+<b><i># SPECIALIZED <br> </b> </i>
+<i><b><u>Automação de testes</u></b></i>
 </head> <br>
 <body> 
 <p> A IDE de desenvolvimento da automação foi o Intellij, a linguagem de programação da automação foi Java, o designer partner foi
