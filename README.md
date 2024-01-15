@@ -1,6 +1,6 @@
 <html> 
 <head>
-<b><i># SPECIALIZED <br> </b> </i>  <br> <br>
+<b><i># SPECIALIZED <br> </b> </i>  <br> 
 <i><b><u>Automação de testes</u></b></i>
 </head> <br>
 <body> <br>
