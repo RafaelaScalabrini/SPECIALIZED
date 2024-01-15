@@ -3,7 +3,8 @@
 <b><i># SPECIALIZED <br> </b> </i>
 <i><b><u>Automação de testes</u></b></i>
 </head> <br>
-<body> 
+<body> <br>
+  <br>
 <p> A IDE de desenvolvimento da automação foi o Intellij, a linguagem de programação da automação foi Java, o designer partner foi
 o Page Object, seguindo os padrões de estrutura e as boas práticas de encapsulamento e divisão das classes e organização de código,
 para uma melhor reutilização do código, foi criado os  métodos na classe BasePage o click e o select. Utilizei o site do Cucumber para criar a estrutura do projeto. O siste do selenium para especificar os passos básicos e complementar com a organização .</p>
